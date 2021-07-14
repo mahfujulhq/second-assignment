@@ -64,7 +64,7 @@ main{
 /* ======= players styles ========*/
 .container{
     width: 1050px;
-    margin: 70px;
+    margin-top: 70px;
 }
 .players{
     display: grid;
@@ -139,8 +139,7 @@ main{
     width: 100%;
     height: 210px;
 }
-
-/* match styles */
+/*----------- match styles -------------*/
 .upcoming-matches{
     margin-top: 80px;
 }
@@ -191,7 +190,7 @@ main{
     color: #fff;
 }
 
-/* footer style */
+/*--------- footer style ----------*/
 .footer-content{
     display: flex;
     flex-direction: column;
@@ -214,4 +213,97 @@ main{
     background: lightgray;
     padding: 10px;
     border-radius: 50%;
+}
+
+/* responsive styles with media query */
+/* =================================== */
+@media screen and (max-width: 687px) {
+    .section-title{
+        font-size: 30px;
+    }
+    .header-area{
+        background: #2D25A0;
+    }
+    .header-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        padding: 0;
+    }
+    .head-title{
+        width: 100%;
+        margin-left: 0;
+    }
+    .head-title .title{
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .header-image img{
+        width: 200px;
+        height: 170px;
+    }
+    /* player styles */
+    .container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        width: 100%;
+    }
+    /* highlight style  */
+    .highlight-area{
+        margin-top: 20px;
+    }
+    .highlight{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .match-summary{
+        width: 100%;
+    }
+    /* champion-area */
+    .champion-area{
+        margin-top: 20px;
+    }
+    .champion-images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
+    /* match styles  */
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    .match-title h3{
+        font-size: 20px;
+    }
+    .match-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    .team-logo img{
+        width: 100px;
+    }
+    .match-button{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .match-button a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #E02C6D;
+        font-size: 16px;
+        color: #fff;
+    }
 }
